@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+}
+
+.img-container {
+  width: 40%;
+}
+.text-container {
+  width: 60%;
+  display: grid;
+  place-content: center;
+}
+
+.section-container {
+  padding: 4rem 0;
+}
+
+.footer-container {
+  padding-top: 4rem;
+  padding-bottom: 0;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  border: 1px dashed aliceblue;
+}
+
+.section-bg-color {
+  background-color: #e3f2fd;
+}
+
+.icon-fa {
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-container {
+    display: block;
+  }
+  .img-container {
+    margin-bottom: 1.2rem;
+    width: 100%;
+  }
+
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-container {
+    margin: 1rem 0;
+  }
+}
