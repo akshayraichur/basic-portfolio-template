@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../assets/favicon.png" />
-    <title>Akshay Raichur - Portfolio</title>
+    <title>Akshay Raichur | Blogs</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -29,7 +29,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -37,7 +37,7 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
-            src="./assets/icon.png"
+            src="../assets/icon.png"
             alt=""
             width="30"
             height="30"
@@ -61,16 +61,23 @@
             ></i>
           </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="/projects/">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
+              <a
+                class="nav-link active text-decoration-underline"
+                href="/blogs/"
+                >Blogs</a
+              >
             </li>
           </ul>
         </div>
@@ -78,85 +85,51 @@
     </nav>
     <!-- End of Navbar -->
 
-    <div class="container">
-      <!-- Home container -->
-      <section class="mt-5 home-container">
-        <div class="img-container me-2">
-          <img
-            src="./assets/akshayraichur.jpeg"
-            loading="lazy"
-            class="img img-thumbnail img-fluid rounded"
-          />
-        </div>
-        <div class="text-container">
-          <h2 class="fs-2 fst-italic">Hey 👋🏻, I am Akshay Raichur</h2>
-          <p class="fs-5 mt-2">
-            I am a Software Engineer based out of Belagavi, Karnataka. I have
-            about 1.5 years of experience in building Webapps.
-          </p>
-          <a href="https://akshayraichur.com" target="_blank" class="fs-6"
-            >Checkout my OG website</a
-          >
-        </div>
-      </section>
-      <!-- End of Home container -->
+    <main class="container">
+      <section class="blog-container mt-4">
+        <h2 class="fs-1 text-center text-decoration-underline">
+          Read my blogs here!
+        </h2>
 
-      <!-- Technology container -->
-      <section
-        class="rounded-3 section-container shadow-sm mt-lg-5 mt-sm-3 section-bg-color"
-      >
-        <p class="fs-2 text-center text-decoration-underline">Technologies</p>
-        <p class="fs-6 text-center">
-          These are few technologies that I work with daily, I consider
-          technologies as tools to solve a problem.
-        </p>
-        <p class="fs-5 text-center">
-          HTML, CSS, JavaScript, GIT, ReactJS, NodeJS, ExpressJS, Material UI,
-          AntD, C++, Python, Web hosting.
-        </p>
-      </section>
-      <!-- End of Technology container -->
-
-      <!-- Projects container -->
-      <section
-        class="rounded-3 section-container shadow-sm bg-light mt-lg-5 mt-sm-3"
-      >
-        <p class="fs-2 text-center text-decoration-underline">Projects</p>
-        <p class="fs-6 text-center">
-          Its important to showcase our work as Software Engineers, just like an
-          artist. Here are my projects hosted online
-        </p>
-        <div class="d-flex justify-content-center">
-          <a href="">
-            <button type="button" class="btn btn-outline-primary">
-              Checkout
-            </button>
-          </a>
+        <div class="row mt-4">
+          <div class="col-sm-6 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  A brief note on how malloc() works in C
+                </h5>
+                <p class="card-text">
+                  malloc() is a C Standard Library function that is defined in
+                  stdlib.h header file.
+                </p>
+                <a
+                  href="https://blog.akshayraichur.com/how-malloc-works-in-c"
+                  class="btn btn-primary"
+                  >Read</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mt-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Lorem, ipsum dolor.</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
+                  impedit.
+                </p>
+                <a href="#" class="btn btn-primary">Read</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- Projects container -->
-
-      <!-- Blogs container -->
-      <section
-        class="rounded-3 section-container shadow-sm mt-lg-5 mt-sm-3 section-bg-color"
-      >
-        <p class="fs-2 text-center text-decoration-underline">Blogs</p>
-        <p class="fs-6 text-center">
-          Knowledge increases by sharing, not by saving. <br />
-          Here are few blogs of mine.
-        </p>
-        <div class="d-flex justify-content-center">
-          <a href="">
-            <button type="button" class="btn btn-primary">Read blogs</button>
-          </a>
-        </div>
-      </section>
-      <!-- Blogs container -->
-    </div>
+    </main>
 
     <!-- Footer -->
-    <div>
-      <section class="footer-container section-bg-color">
+    <footer>
+      <!-- When you have more blogs to display, remove fixed-bottom for a better UX -->
+      <section class="footer-container fixed-bottom section-bg-color">
         <p class="fs-2 text-center text-decoration-underline">Get in Touch!</p>
         <p class="fs-6 text-center">Thank you for visiting this website.</p>
         <span class="d-flex justify-content-center">
@@ -178,7 +151,7 @@
           Created, Enhanced, Broken by Akshay Raichur with ❤️ from 🇮🇳
         </p>
       </section>
-    </div>
+    </footer>
     <!-- End of Footer -->
 
     <script
